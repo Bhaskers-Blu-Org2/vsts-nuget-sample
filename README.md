@@ -5,7 +5,7 @@ This is a sample repo that demonstrates a simple bootstrap flow for initializing
 ## To play around with it
 From a command prompt, run the following:
 
-```
+```winbatch
 git clone https://github.com/Microsoft/VSS.PackageManagement.Sample.git
 cd VSS.PackageManagement.Sample
 init
