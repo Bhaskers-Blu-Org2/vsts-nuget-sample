@@ -6,8 +6,8 @@ This is a sample repo that demonstrates a simple bootstrap flow for initializing
 From a command prompt, run the following:
 
 ```winbatch
-git clone https://github.com/Microsoft/VSS.PackageManagement.Sample.git
-cd VSS.PackageManagement.Sample
+git clone https://github.com/Microsoft/vsts-nuget-sample.git
+cd vsts-nuget-sample
 init
 ```
 
@@ -17,4 +17,4 @@ The purpose of `init` is pretty straightforward. It will:
 * Run the AuthHelper to provision credentials for VSO sources listed in the repo's `nuget.config`. AuthHelper uses ADAL to obtain personal access tokens non-interactively. The access tokens are stored in the user's machine-wide `nuget.config`.
 * (Optionally) Restore tools packages using NuGet. There's a `packages.config` file under `.nuget\tools` which can be populated with a list of all tools to be restored during `init`.
 
-The bootstrap flow described above is made possible by a set of scripts which are actually wrapped up in a NuGet package as well: [VSS.PackageManagement.Bootstrap](https://github.com/Microsoft/VSS.PackageManagement.Bootstrap). If you're interested in using this flow in your codebase, you can leverage this package to install the bootstrap scripts. [Get started with that documentation](https://www.visualstudio.com/get-started/package/use/bootstrap-nuget).
+The bootstrap flow described above is made possible by a set of scripts which are actually wrapped up in a NuGet package as well: [VSS.PackageManagement.Bootstrap](https://github.com/Microsoft/vsts-nuget-bootstrapper). If you're interested in using this flow in your codebase, you can leverage this package to install the bootstrap scripts. [Get started with that documentation](https://www.visualstudio.com/get-started/package/use/bootstrap-nuget).
