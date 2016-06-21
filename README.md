@@ -18,3 +18,8 @@ The purpose of `init` is pretty straightforward. It will:
 * (Optionally) Restore tools packages using NuGet. There's a `packages.config` file under `.nuget\tools` which can be populated with a list of all tools to be restored during `init`.
 
 The bootstrap flow described above is made possible by a [set of scripts](https://github.com/Microsoft/vsts-nuget-bootstrapper) which are wrapped up in a NuGet package as well: [Microsoft.VisualStudio.Services.NuGet.Bootstrap](https://www.nuget.org/packages/Microsoft.VisualStudio.Services.NuGet.Bootstrap). If you're interested in using this flow in your codebase, you can leverage this package to install the bootstrap scripts. [Get started with that documentation](https://www.visualstudio.com/get-started/package/use/bootstrap-nuget).
+
+
+# Policy
+
+This project has adopted the [Microsoft Open Source Code of Conduct](https://opensource.microsoft.com/codeofconduct/). For more information see the [Code of Conduct FAQ](https://opensource.microsoft.com/codeofconduct/faq/) or contact [opencode@microsoft.com](mailto:opencode@microsoft.com) with any additional questions or comments.
